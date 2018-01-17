@@ -529,5 +529,9 @@
   "launcherFileFilter": "KeePass files",
 
   "authPopupRequired": "Pop-ups are blocked",
-  "authPopupRequiredBody": "Please allow pop-ups in your browser or try again."
+  "authPopupRequiredBody": "Please allow pop-ups in your browser or try again.",
+
+  "nextcloud": "NextCloud",
+  "openPath": "File",
+  "openPathDesc": "Password file name, default pass.kdbx"
 }

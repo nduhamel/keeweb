@@ -3,7 +3,7 @@ const SettingsStore = require('../comp/settings-store');
 
 const AppSettingsModel = Backbone.Model.extend({
     defaults: {
-        theme: 'fb',
+        theme: 'hc',
         locale: null,
         expandGroups: true,
         listViewWidth: null,
@@ -15,8 +15,8 @@ const AppSettingsModel = Backbone.Model.extend({
         rememberKeyFiles: false,
         idleMinutes: 15,
         minimizeOnClose: false,
-        tableView: false,
-        colorfulIcons: false,
+        tableView: true,
+        colorfulIcons: true,
         titlebarStyle: 'default',
         lockOnMinimize: true,
         lockOnCopy: false,
@@ -28,22 +28,22 @@ const AppSettingsModel = Backbone.Model.extend({
         hideEmptyFields: false,
         skipHttpsWarning: false,
         demoOpened: false,
-        fontSize: 0,
+        fontSize: 2,
         tableViewColumns: null,
         generatorPresets: null,
         cacheConfigSettings: false,
 
-        canOpen: true,
-        canOpenDemo: true,
+        canOpen: false,
+        canOpenDemo: false,
         canOpenSettings: true,
         canCreate: true,
-        canImportXml: true,
+        canImportXml: false,
         canRemoveLatest: true,
 
-        dropbox: true,
-        webdav: true,
-        gdrive: true,
-        onedrive: true
+        dropbox: false,
+        webdav: false,
+        gdrive: false,
+        onedrive: false
     },
 
     initialize: function() {
